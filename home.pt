@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/app.css"/>
+        <script src="/static/app.js"></script>
+    </head>
+    <body>
+        <form action="json" method="post">
+            <div>
+                <label for="forwardTime">Forward Time</label>
+                <input type="number" value="1"  step="any" name="forwardTime"/>
+            </div>
+            <div>
+                <label for="backwardTime">Backward Time</label>
+                <input type="number" value="1"  step="any" name="backwardTime"/>
+            </div>
+            <div>
+                <label for="leftTime">Left Time</label>
+                <input type="number" value="1"  step="any" name="leftTime"/>
+            </div>
+            <div>
+                <label for="rightTime">right Time</label>
+                <input type="number" value="1"  step="any" name="rightTime"/>
+            </div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td onclick="forward();"><input type="button" class="dir up"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td onclick="left();"><input type="button" class="dir left"/></td>
+                    <td onclick="backward();"><input type="button" class="dir down"/></td>
+                    <td onclick="right();"><input type="button" class="dir right"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input class="btn restart" type="reset" value="" onclick="reset()"/></td>
+                    <td><input class="btn start" type="submit" value=""/></td>
+                </tr>
+            </table>
+            
+            
+            <input type="text" name="directions" id="directions" />
+        </form>
+        <div id='steps'></div>
+    </body>
+</html>

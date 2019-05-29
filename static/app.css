@@ -1,0 +1,129 @@
+body {
+  margin: 2em;
+  font-family: sans-serif;
+}
+table {
+  width: 100%;
+}
+table tr {
+  height: 300px;
+  text-align: center;
+}
+
+#directions {
+  display: none;
+}
+
+label{
+  font-size: 60px;
+}
+input[type="number"] {
+  width: 100%;
+  font-size: 80px;
+}
+/* input[type="submit"],
+.btn {
+  width: 100%;
+  font-size: 160px;
+} */
+.btn, .dir {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #d2f6d4;
+  border: none;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: 190px 190px;
+  box-shadow: 5px 5px #999;
+  
+  height: 195px;
+  padding-right: 93px;
+  padding-left: 93px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+.btn:hover ,.dir:hover {
+  background-color: #a0f3a4;
+}
+
+.btn:active, .dir:active {
+  background-color: #a0f3a4;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+input.btn.start {
+  background-image: url("/static/img/Start-icon.png");
+  background-size: 185px 185px;
+}
+
+input.btn.restart {
+  background-image: url("/static/img/Flat_restart_icon.svg.png");
+  background-size: 185px 185px;
+}
+
+.dir.up {
+  background-image: url("/static/img/forward.png");
+}
+
+.dir.up:hover {
+  background-image: url("/static/img/forward-dark.png");
+}
+
+.dir.up:active {
+  background-image: url("/static/img/forward-dark.png");
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+.dir.down {
+  background-image: url("/static/img/back.png");
+}
+
+.dir.down:hover {
+  background-image: url("/static/img/back-dark.png");
+  /* background-color: #eee; */
+}
+
+.dir.down:active {
+  background-image: url("/static/img/back-dark.png");
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+.dir.left {
+  background-image: url("/static/img/turn-left.png");
+}
+
+.dir.left:hover {
+  background-image: url("/static/img/turn-left-dark.png");
+  /* background-color: #eee; */
+}
+
+.dir.left:active {
+  background-image: url("/static/img/turn-left-dark.png");
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+.dir.right {
+  background-image: url("/static/img/turn-right.png");
+}
+
+.dir.right:hover {
+  background-image: url("/static/img/turn-right-dark.png");
+}
+
+.dir.right:active {
+  background-image: url("/static/img/turn-right-dark.png");
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
