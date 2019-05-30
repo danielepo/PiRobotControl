@@ -55,22 +55,30 @@ def stopMotors():
     stopA()
     stopB()
 
-def forward():
+def forward(t):
     forwardsA()
     forwardsB()
+    time.sleep(t)
+    stopMotors()
 
-def backward():
+def backward(t):
     backwardsA()
     backwardsB()
+    time.sleep(t)
+    stopMotors()
 
-def left():
+def left(t):
     backwardsA()
     forwardsB()
+    time.sleep(t)
+    stopMotors()
 
-def right():
+def right(t):
     backwardsB()
     forwardsA()    
-
+    time.sleep(t)
+    stopMotors()
+    
 def isOn():
     GPIO.input(pinOnOff)
 

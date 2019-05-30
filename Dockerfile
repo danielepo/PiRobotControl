@@ -12,6 +12,8 @@ RUN pip install --upgrade pip setuptools
 RUN pip install "pyramid==1.10.4" waitress
 
 RUN pip install pyramid_chameleon
+RUN pip install rpi.gpio
+# RUN pip install time
 
 RUN cd projects/quick_tutorial
 COPY . /src
