@@ -74,8 +74,8 @@ def left(t):
     stopMotors()
 
 def right(t):
-    # backwardsB()
-    forwardsB()
+    backwardsA()
+    # forwardsB()
     time.sleep(t)
     stopMotors()
     
