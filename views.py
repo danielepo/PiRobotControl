@@ -22,7 +22,7 @@ def redirect_view(request):
 def exception_view(request):
     raise Exception()
 
-@view_config(route_name='hello_json', renderer='json')
+@view_config(route_name='hello_json', renderer='home.pt')
 def hello_json(request):
     input=request.POST["directions"].split()
     arr = []
@@ -35,5 +35,5 @@ def hello_json(request):
             arr.append(robot.turn_right(request.POST["leftTime"]))
         else:
             arr.append(robot.turn_left(request.POST["rightTime"]))
-
-    return arr
+    
+    return ''

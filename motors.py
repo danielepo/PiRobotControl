@@ -83,3 +83,5 @@ def isOn():
     GPIO.input(pinOnOff)
 
 
+forward(1)
+
