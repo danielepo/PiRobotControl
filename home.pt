@@ -5,21 +5,14 @@
     </head>
     <body>
         <form action="json" method="post">
-            <div>
-                <label for="forwardTime">Forward Time</label>
-                <input type="number" value="1"  step="any" name="forwardTime"/>
-            </div>
-            <div>
-                <label for="backwardTime">Backward Time</label>
-                <input type="number" value="1"  step="any" name="backwardTime"/>
-            </div>
+          
             <div>
                 <label for="leftTime">Left Time</label>
-                <input type="number" value="1"  step="any" name="leftTime"/>
+                <input type="number" value="1"  step="0.1" name="leftTime"/>
             </div>
             <div>
                 <label for="rightTime">right Time</label>
-                <input type="number" value="1"  step="any" name="rightTime"/>
+                <input type="number" value="1"  step="0.1" name="rightTime"/>
             </div>
             <table>
                 <tr>

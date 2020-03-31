@@ -28,12 +28,12 @@ def hello_json(request):
     arr = []
     for i in input:
         if i == 'b':
-            arr.append(robot.backward(request.POST["backwardTime"]))
+            arr.append(robot.backward(1))
         elif i == 'f':
-            arr.append(robot.forward(request.POST["forwardTime"]))
+            arr.append(robot.forward(1))
         elif i == 'r':
-            arr.append(robot.turn_right(request.POST["leftTime"]))
+            arr.append(robot.turn_right(request.POST["rightTime"]))
         else:
-            arr.append(robot.turn_left(request.POST["rightTime"]))
+            arr.append(robot.turn_left(request.POST["leftTime"]))
     
     return ''
